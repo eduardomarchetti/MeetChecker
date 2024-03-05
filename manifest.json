@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Agenda do Google Meet",
+    "version": "1.0",
+    "description": "Extensão de navegador para acessar a agenda do Google e abrir links de reunião do Google Meet.",
+    "permissions": [
+      "identity",
+      "https://www.googleapis.com/*",
+      "alarms",
+      "notifications",
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://*.googleapis.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
